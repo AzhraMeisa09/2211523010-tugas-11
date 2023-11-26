@@ -28,7 +28,7 @@ public class VirtualDemo {
             System.out.println("Total Bayar : Rp.  " + invoice.hitungTotalBayar());
         }
         catch(Exception e){
-            System.out.println("Terjadi Kesalahan Input"+e.getMessage());
+            System.out.println("Terjadi Kesalahan Input"+ e.getMessage());
         }
         finally{
             scanner.close();
