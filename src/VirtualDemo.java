@@ -20,10 +20,12 @@ public class VirtualDemo {
             System.out.print("Input quantity: ");
             int jumlahBeli = scanner.nextInt();
 
-            Invoice faktur = new Invoice( nomorFaktur,namaPelanggan, namaBarang, hargaBarang, jumlahBeli);
+             // Membuat objek Invoice
+            Invoice invoice = new Invoice( nomorFaktur,namaPelanggan, namaBarang, hargaBarang, jumlahBeli);
 
-            System.out.println("\n========== Detail Faktur ==========\n"+ faktur);
-            System.out.println("Total Bayar : Rp.  " + faktur.hitungTotalBayar());
+            // Menampilkan detail Invoice dan total bayar
+            System.out.println("\n========== Detail Faktur ==========\n"+ invoice);
+            System.out.println("Total Bayar : Rp.  " + invoice.hitungTotalBayar());
         }
         catch(Exception e){
             System.out.println("Terjadi Kesalahan Input"+e.getMessage());
